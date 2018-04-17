@@ -1,0 +1,62 @@
+Copyright (C) 2012 Germán Hüttemann <ghuttemann@gmail.com>
+Copyright (C) 2012 Juan Ricart <juangabriel.ricart@gmail.com>
+
+These files hold the source code to mohs, a set of implementations for
+multiobjective harmony search as documented in the paper:
+
+Juan Ricart, Germán Hüttemann, Joaquín Lima, Benjamín Barán,
+Multiobjective Harmony Search Algorithm Proposals,
+Electronic Notes in Theoretical Computer Science,
+Volume 281, 29 December 2011, Pages 51-67,
+ISSN 1571-0661, 10.1016/j.entcs.2011.11.025.
+(http://www.sciencedirect.com/science/article/pii/S1571066111001745)
+Keywords: Harmony Search; Multiobjective Optimization; Musicians
+          Improvisation; Pareto Dominance
+
+BUILDING
+
+The sources come with Makefiles built using the Netbeans IDE on a
+Windows platform. The steps for building mohs are as follows:
+
+1. Download the Netbeans IDE with support for C/C++
+2. Right-click on the project and choose ``Build''
+
+Note: If you are under a non-Windows platform, right-click on the
+project and click on ``Properties''. Select the ``Build'' item from
+the left pane and change the ``Build Host'' to localhost.
+
+RUNNING
+
+The program requires the following parameters in order to run:
+
+<hsConfigFile> configuration file to set various parameters to the
+algorithm. Refer to the sample configuration file bundled with the sources.
+
+<problem> The problem to solve, you may choose from one of: zdt1,
+zdt2, zdt3, zdt4, zdt5, zdt6, cec09unprob1, cec09unprob2,
+cec09unprob3, cec09unprob4, cec09unprob5.
+
+<algorithm> variants of the HS algorithm: hs1, hs2, hs3. Notice that
+hs2 corresponds to MOHS1 and hs3 corresponds to MOHS2 as described in
+the paper cited above.
+
+<calculateMetrics> pass 1 to calculate M* metrics, 0 otherwise.
+
+<doSampling> pass 1 to calculate sampling data, 0 otherwise.
+
+<modalMode> pass 1 to run the HS algorithm with mode, 0 otherwise.
+
+COPYRIGHT NOTICE
+
+mohs is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+mohs is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
